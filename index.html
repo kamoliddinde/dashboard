@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside>
+        <img src="./img/LOGO.png" width="105px" height="90px" alt="">
+        <nav>
+            <a href="#"><img src="./img/icon1.png" alt=""></a>
+            <a href="#"><img src="./img/icon2.png" alt=""></a>
+            <a href="#"><img src="./img/members.png" alt=""></a>
+            <a href="#"><img src="./img/Path 6084.png" alt=""></a>
+            <a href="#"><img src="./img/settings (2).svg" alt=""></a>
+            <a href="#"><img src="./img/logout.png" alt=""></a>
+        </nav>
+    </aside>
+    <main>
+        <header>
+            <div class="header-left">
+                <nav>
+                    <a href="#">dashboard</a>
+                    <a href="#">message</a>
+                    <a href="#">help</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <img src="./img/PhotoPrifile.png" alt="">
+                <select name="" id="">
+                    <option value=""> simrah sah</option>
+                </select>
+            </div>
+
+        </header>
+        <div class="content">
+            <div class="content-left">
+                <div class="projects">
+                    <div class="project">
+                        <h1>
+                            Add Project
+                        </h1>
+                        <p>
+                            Create new project and customize it with
+                            your priority base UI kit element.
+                        </p>
+                        <h5>
+                            Create New Project
+                        </h5>
+                    </div>
+                    <div class="project">
+                        <h1>
+                            Add Project
+                        </h1>
+                        <p>
+                            Create new project and customize it with
+                            your priority base UI kit element.
+                        </p>
+                        <h5>
+                            Create New Project
+                        </h5>
+                    </div>
+                    <div class="project">
+                        <h1>
+                            Add Project
+                        </h1>
+                        <p>
+                            Create new project and customize it with
+                            your priority base UI kit element.
+                        </p>
+                        <h5>
+                            Create New Project
+                        </h5>
+                    </div>
+                </div>
+                <table class="content-table">
+                    <tr>
+                        <td>
+                            <img src="./img/Untitled-1 1.png" alt="">
+                        </td>
+                        <td>
+                            25 May, 2020
+                        </td>
+                        <td>
+                            Raima Hasan
+                        </td>
+                        <td>
+                            10 July, 2020
+                        </td>
+                        <td>
+                            In Process
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/Untitled2 1 (1).png" alt="">
+                        </td>
+                        <td>
+                            25 May, 2020
+                        </td>
+                        <td>
+                            Raima Hasan
+                        </td>
+                        <td>
+                            10 July, 2020
+                        </td>
+                        <td>
+                            In Process
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <img src="./img/Untitled-3 1 (2).png" alt="">
+                        </td>
+                        <td>
+                            25 May, 2020
+                        </td>
+                        <td>
+                            Raima Hasan
+                        </td>
+                        <td>
+                            10 July, 2020
+                        </td>
+                        <td>
+                            In Process
+                        </td>
+                    </tr>
+                </table>
+                <div class="charts">
+                    <div class="chart1">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="chart2">
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                    <div class="chart3">
+                        <canvas id="myChart3"></canvas>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="content-right">
+                <div class="Activities">
+                    <h3>Project Activities</h3>
+                    <div class="Activitie">
+                        <img src="./img/PhotoProfile.png" alt="">
+                        <p>Tanjimul Alam</p>
+                    </div>
+                    <div class="Activitie">
+                        
+                        <img src="./img/Mask Group (4).png" alt="">
+                        <p>Sarah Rahman</p>
+                    </div>
+                    <div class="Activitie">
+                        <img src="./img/zbLW0FG8XU8.png" alt="">
+                        <p>Anika Tabassum</p>
+                    </div>
+                    <div class="Activitie">
+                        <img src="./img/PhotoProfile (2).png" alt="">
+                        <p>Raiyan Khan</p>
+                    </div>
+                    <div class="Activitie">
+                        <img src="./img/PhotoProfile (3).png " alt="">
+                        <p>Salma Hayek</p>
+                    </div>
+                    <button>See More</button>
+                </div>
+                <div class="Teams">
+                    <div class="Team">
+                        <img src="./img/Mask Group (1).png" alt="">
+                        <p>Meeting With Team X</p>
+                    </div>
+                     <div class="Team">
+                        <img src="./img/Mask Group (2).png" alt="">
+                        <p>Meeting With Team X</p>
+                    </div>
+                    <div class="Team">
+                        <img src="./img/PhotoProfile (1).png" alt="">
+                        <p>Meeting With Team X</p>
+                    </div>
+                    <div class="Team">
+                        <img src="./img/Mask Group (3).png" alt="">
+                        <p>Meeting With Team X</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+  const ctx2 = document.getElementById('myChart2');
+  const ctx3 = document.getElementById('myChart3');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3, 6, 8, 12, 19, 3, 5, 2, 3, 6, 8, 6, 8, 9, 3, 6, ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false,
+            },
+        },
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+  new Chart(ctx2, {
+    type: 'line',
+    data: {
+      labels: ["Jan", "Feb", "March","Apr", "June", "Junl", "Avg", "sep", "Oct"],
+      datasets: [{
+        label: '# of Votes',
+        data: [1,2,3,4,5,6,7,8,9 ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false,
+            },
+        },
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+  new Chart(ctx3, {
+    type: 'doughnut',
+    data: {
+      labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5,  ],
+        borderWidth: 1
+        
+      }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false,
+            },
+        },
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+
+
+
+ 
+</body>
+
+</html>
